@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 
 
 class TotalViewModel: ViewModel() {
+    //live data sudah diimplementasikan di commit pertama
     private val _total = MutableLiveData(0)
     val total: LiveData<Int> = _total
     fun incrementTotal() {
