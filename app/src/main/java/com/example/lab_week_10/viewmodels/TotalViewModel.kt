@@ -12,4 +12,9 @@ class TotalViewModel: ViewModel() {
     fun incrementTotal() {
         _total.value = (_total.value ?: 0) + 1
     }
+
+    fun setTotal(newTotal: Int) {
+        _total.postValue(newTotal)
+    }
+
 }
